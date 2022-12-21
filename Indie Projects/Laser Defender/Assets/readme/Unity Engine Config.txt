@@ -1,0 +1,17 @@
+# Tags and Layers (Inspector):
+Projectiles like player laser and enemy laser,
+in their Sprite Renderer component, Additional Settings:
+Sort Layer: Projectiles(newly created layer that is to be rendered before other default
+so that player/enemy appear in top of the bullet they shoot resp.
+
+# Physics2D (Project Settings):
+`Player, Enemy, Player-Projectile, Enemy-Projectile`
+- these are user added layers to differenciate the properties of 
+which collider in which layer will trigger the collision event
+Even without these i have made the code efficiently to differenciate 
+player damage and enemy damage, just for tutorial purposes...
+
+# Scenes Order (Build Settings):
+1. Start Menu
+2. Game
+3. Game Over

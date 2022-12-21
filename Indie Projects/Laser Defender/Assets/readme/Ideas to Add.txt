@@ -1,0 +1,26 @@
+# mobile game based
+
+Convert into 16:9 landscape
+adding wide background senarios
+
+add left half screen circle drag movement, for moving the space ship
+with animation of thrusters and booster of spaceships while moving
+
+add right half screen circle drag movement like mini-miltia, 
+half-drag --> aim in that direction, i.e., rotate ship in that direction
+full-drag --> shoot in that direction
+
+
+# Addional Content
+
+## more waves
+Create Asteriod waves, with Can shoot ability = false
+using dust_particles.png's to create a particle effect for destruction of these asteroids
+
+## dynamic retro waves
+wave path moves top to bottom and bottom to top of the game screen
+try to add path in spiral fashion going up and down to make it more artistic...
+
+---
+Thank You
+---
