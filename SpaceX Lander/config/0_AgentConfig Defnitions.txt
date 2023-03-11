@@ -1,0 +1,36 @@
+Link:
+https://github.com/Unity-Technologies/ml-agents/blob/develop/docs/Training-Configuration-File.md#memory-enhanced-agents-using-recurrent-neural-networks
+
+behaviors:
+  Behaviour Name: # Put the string entered same as in "Behaviour Paramaters".Name
+    trainer_type: ppo # Proximal Policy Optimization
+    hyperparameters:
+      batch_size: # no of samples per 1 batch, n batches cover entire data will give 1 epoch
+      buffer_size: # Number of experiences to collect before updating the policy model (for ppo)
+      learning_rate: # gradient learning step
+      beta: 5.0e-4
+      epsilon: # epsilon-greedy factor, to induce randomness
+      lambd: 0.99
+      num_epoch: # number of epochs
+      learning_rate_schedule: linear
+      beta_schedule: constant
+      epsilon_schedule: linear
+    network_settings:
+      normalize: false
+      hidden_units: # no.of neural nodes in a layer
+      num_layers: # no.of hidden layers
+    reward_signals: # parameters to tune the reward learning process
+      extrinsic:
+        gamma: 0.99
+        strength: 1.0 # controlling factor of learning agent
+      gail: # generative adversarial imitation learning
+        gamma: 0.8
+        strength: 0.5
+	      demo_path: Demos/name.demo
+    behavioral_cloning: # tries to mimic the exact demonstration data
+        gamma: 0.8
+        strength: 0.5
+        demo_path: Demos/name.demo
+    max_steps: 500000 # max no.of steps of an episode
+    time_horizon: 1024
+    summary_freq: 10000

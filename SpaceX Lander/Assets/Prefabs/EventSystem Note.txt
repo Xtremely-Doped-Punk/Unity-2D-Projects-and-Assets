@@ -1,0 +1,14 @@
+https://forum.unity.com/threads/how-to-disable-keyboard-navigation.265427/#post-1754235
+How to disable keyboard navigation?
+
+Does anyone know how to disable keyboard navigation/input in general?
+
+For each button I have selected "none" for navigation, and when nothing is selected, using the arrow keys does nothing (as expected). But if I then click a button, and then use the arrow keys, the button that I just clicked gets selected, and hitting the enter key will activate the button again.
+
+I'm not sure if this is a bug or if there is something else I have to set in order to turn off this kind of navigation.
+
+>>>
+n the StandaloneInputModule Component on the EventSystem GameObject, clearing all axis and buttons should solve your issue I think.
+
+>>>
+Simply clearing those fields is just going to throw a UnityException: Input Button is not setup. (In the latest version of Unity anyway.) What he needs is the Send Navigation Events boolean in the Event System component. Disabling it will suppress the submit/cancel/move navigation events.

@@ -1,0 +1,29 @@
+{
+    "RocketAgentConfig": {
+        "checkpoints": [
+            {
+                "steps": 6144,
+                "file_path": "results\\ppo\\RocketAgentConfig\\RocketAgentConfig-6144.onnx",
+                "reward": null,
+                "creation_time": 1673239682.1422136,
+                "auxillary_file_paths": [
+                    "results\\ppo\\RocketAgentConfig\\RocketAgentConfig-6144.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 6144,
+            "file_path": "results\\ppo\\RocketAgentConfig.onnx",
+            "reward": null,
+            "creation_time": 1673239682.1422136,
+            "auxillary_file_paths": [
+                "results\\ppo\\RocketAgentConfig\\RocketAgentConfig-6144.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.30.0",
+        "torch_version": "1.13.1+cu117"
+    }
+}
